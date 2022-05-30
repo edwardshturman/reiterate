@@ -1,0 +1,50 @@
+{
+  "name": "reiterate",
+  "author": "Edward Shturman",
+  "bugs": "https://github.com/edwardshturman/reiterate/issues",
+  "homepage": "https://github.com/edwardshturman/reiterate",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "description": "A small Discord bot for temporary statuses",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edwardshturman/reiterate.git"
+  },
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "standardx --env mocha",
+    "start": "node deploy-commands.js && node ."
+  },
+  "eslintConfig": {
+    "rules": {
+      "indent": [
+        "error",
+        4
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "standardx": {
+    "ignore": [
+      "test.js"
+    ]
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.33.1",
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1",
+    "standardx": "^7.0.0"
+  },
+  "engines": {
+    "node": "16.9.1"
+  }
+}
